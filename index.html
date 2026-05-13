@@ -3,55 +3,143 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Order Summary</title>
 
-    <!-- Tailwind CSS -->
+    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-  <body>
-    <div class="container">
-      <div class="card">
-        <!-- Top Image -->
-        <img
-          src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=800&auto=format&fit=crop"
-          alt="Music Illustration"
-          class="top-image"
-        />
+  <body
+    class="font-['Red_Hat_Display'] min-h-screen flex items-center justify-center p-5"
+  >
+    <main
+      class="bg-white rounded-3xl overflow-hidden max-w-sm w-full shadow-2xl text-center card-shadow"
+    >
+      <!-- Header Image - THE LINK IS HERE -->
+      <div class="bg-[#2531a3] flex items-center justify-center">
+        <svg
+          class="w-full h-auto block"
+          viewBox="0 0 450 220"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="450" height="220" fill="#2531A3" />
 
-        <!-- Content -->
-        <div class="content">
-          <h1>Order Summary</h1>
+          <!-- Guitar -->
+          <g transform="translate(180, 50)" fill="#EDE0FF">
+            <path
+              d="M45 0c-15 0-25 10-25 25s10 25 25 25 25-10 25-25S60 0 45 0zM45 80c-15 0-25 10-25 25s10 25 25 25 25-10 25-25S60 80 45 80z"
+            />
+            <rect x="35" y="25" width="20" height="50" rx="10" fill="#EDE0FF" />
+            <rect x="40" y="0" width="10" height="80" fill="#382ae1" />
+            <line
+              x1="40"
+              y1="10"
+              x2="50"
+              y2="10"
+              stroke="#1f2f56"
+              stroke-width="2"
+            />
+            <line
+              x1="40"
+              y1="20"
+              x2="50"
+              y2="20"
+              stroke="#1f2f56"
+              stroke-width="2"
+            />
+            <line
+              x1="40"
+              y1="30"
+              x2="50"
+              y2="30"
+              stroke="#1f2f56"
+              stroke-width="2"
+            />
+            <line
+              x1="40"
+              y1="40"
+              x2="50"
+              y2="40"
+              stroke="#1f2f56"
+              stroke-width="2"
+            />
+            <line
+              x1="40"
+              y1="50"
+              x2="50"
+              y2="50"
+              stroke="#1f2f56"
+              stroke-width="2"
+            />
+            <line
+              x1="40"
+              y1="60"
+              x2="50"
+              y2="60"
+              stroke="#1f2f56"
+              stroke-width="2"
+            />
+          </g>
 
-          <p class="description">
-            You can now listen to millions of songs, audiobooks and podcasts on
-            any device anywhere you like!
-          </p>
-
-          <!-- Plan Box -->
-          <div class="plan-box">
-            <div class="left-side">
-              <div class="music-icon">🎵</div>
-
-              <div>
-                <h3>Annual Plan</h3>
-                <p>$59.99/year</p>
-              </div>
-            </div>
-
-            <a href="#">Change</a>
-          </div>
-
-          <!-- Button -->
-          <button>Proceed to Payment</button>
-
-          <p class="cancel">Cancel Order</p>
-        </div>
+          <!-- Music notes -->
+          <g fill="#EDE0FF">
+            <circle cx="120" cy="80" r="8" />
+            <rect x="128" y="40" width="4" height="45" rx="2" />
+            <circle cx="320" cy="70" r="8" />
+            <rect x="328" y="30" width="4" height="45" rx="2" />
+          </g>
+        </svg>
       </div>
-    </div>
+      <!-- Card Content -->
+      <div class="bg-[#f5f0e6] p-8">
+        <h1 class="text-2xl font-black text-[#1f2f56] mb-4">Order Summary</h1>
+
+        <p class="text-base text-[#7280a7] leading-relaxed mb-6">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+
+        <!-- Plan Box -->
+        <div class="bg-white/60 rounded-xl p-4 flex items-center gap-4 mb-6">
+          <div
+            class="bg-[#e0e8ff] w-12 h-12 rounded-full flex items-center justify-center text-xl"
+          >
+            🎵
+          </div>
+          <div class="flex-1 text-left">
+            <h2 class="text-base font-black text-[#1f2f56]">Annual Plan</h2>
+            <p class="text-base text-[#7280a7]">$59.99/year</p>
+          </div>
+          <a
+            href="#"
+            class="text-sm font-bold text-[#382ae1] underline hover:no-underline hover:text-[#7562e0]"
+          >
+            Change
+          </a>
+        </div>
+
+        <!-- Buttons -->
+        <button
+          class="w-full bg-[#382ae1] text-white border-none py-4 rounded-xl text-base font-bold cursor-pointer btn-primary mb-5"
+        >
+          Proceed to Payment
+        </button>
+
+        <button
+          class="bg-transparent border-none text-base font-bold text-[#7280a7] cursor-pointer hover:text-[#1f2f56] transition-colors"
+        >
+          Cancel Order
+        </button>
+      </div>
+    </main>
   </body>
 </html>
